@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template project</title>
+    
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/7efa7486da.js" crossorigin="anonymous"></script>
+    <!-- bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- general css  -->
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+
+    <!--  Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary-subtle">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  
+          </ul>
+       
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Create a new post
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Create a new post</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h3>Place your caption here</h3>
+                  <div class="form-floating my-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">start typing your caption</label>
+                  </div>
+                  <button type="button" class="btn btn-secondary"><i class="fa-solid fa-camera"></i></button>
+                  <button type="button" class="btn btn-secondary mx-2"><i class="fa-solid fa-location-dot"></i></button>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success">push</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- menu  -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary dropdown-toggle m-2" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-gear text-light"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><button class="dropdown-item" type="button">Action</button></li>
+              <li><button class="dropdown-item" type="button">Another action</button></li>
+              <li><button class="dropdown-item" type="button">Something else here</button></li>
+              <li><button class="dropdown-item text-danger border-top" type="button">Log Out</button></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </nav>
+  
+
+    <!-- greed selector -->
+    <section id="feed">
+      <div class="wrapper">
+
+        <nav class="container">
+          <div class="nav nav-tabs justify-content-center my-5" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+          </div>
+        </nav>
+
+        <div class="tab-content" id="nav-tabContent">
+
+          <!-- grid view  -->
+          <div class="container tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+            
+            
+            <div class="row gx-2">
+              <div class="col-4 img-container">  
+                <img class="rounded" src="https://www.ardeaprints.com/p/172/golden-retriever-dog-puppy-outdoors-13831403.jpg" alt="lovely puppy" />
+              </div>
+
+              <div class="col-4 img-container">       
+                  <img class="rounded" src="https://lp-cms-production.imgix.net/features/2017/11/GettyRF_543346423-1-ab159824d5bd.jpg" alt="lovely puppy" />
+              </div>
+
+              <div class="col-4 img-container">
+                  <img class="rounded" src="https://www.worldbeachguide.com/photos/papagayo-beach-lanzarote.jpg" alt="lovely puppy" />
+              </div>
+            </div>
+
+            <div class="row gx-2">
+              <div class="col-4 img-container">  
+                <img class="rounded" src="https://www.ardeaprints.com/p/172/golden-retriever-dog-puppy-outdoors-13831403.jpg" alt="lovely puppy" />
+              </div>
+
+              <div class="col-4 img-container">       
+                  <img class="rounded" src="https://lp-cms-production.imgix.net/features/2017/11/GettyRF_543346423-1-ab159824d5bd.jpg" alt="lovely puppy" />
+              </div>
+
+              <div class="col-4 img-container">
+                  <img class="rounded" src="https://www.worldbeachguide.com/photos/papagayo-beach-lanzarote.jpg" alt="lovely puppy" />
+              </div>
+            </div>
+
+            <div class="row gx-2">
+              <div class="col-4 img-container">  
+                <img class="rounded" src="https://www.ardeaprints.com/p/172/golden-retriever-dog-puppy-outdoors-13831403.jpg" alt="lovely puppy" />
+              </div>
+
+              <div class="col-4 img-container">       
+                  <img class="rounded" src="https://lp-cms-production.imgix.net/features/2017/11/GettyRF_543346423-1-ab159824d5bd.jpg" alt="lovely puppy" />
+              </div>
+
+              <div class="col-4 img-container">
+                  <img class="rounded" src="https://www.worldbeachguide.com/photos/papagayo-beach-lanzarote.jpg" alt="lovely puppy" />
+              </div>
+            </div>
+
+            <div class="row gx-2">
+              <div class="col-4 img-container">  
+                <img class="rounded" src="https://www.ardeaprints.com/p/172/golden-retriever-dog-puppy-outdoors-13831403.jpg" alt="lovely puppy" />
+              </div>
+
+              <div class="col-4 img-container">       
+                  <img class="rounded" src="https://lp-cms-production.imgix.net/features/2017/11/GettyRF_543346423-1-ab159824d5bd.jpg" alt="lovely puppy" />
+              </div>
+
+              <div class="col-4 img-container">
+                  <img class="rounded" src="https://www.worldbeachguide.com/photos/papagayo-beach-lanzarote.jpg" alt="lovely puppy" />
+              </div>
+            </div>
+
+          </div>
+
+
+          <!-- card view  -->
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+            
+            <!-- single card post  -->
+            <div class="card">
+
+              <div class="card-title">
+                <div class="user-info">
+                  <div class="user-icon">
+                    <i class="fa-brands fa-html5"></i>
+                  </div>
+
+                  <div class="user-data">
+                    <p>HTML 5</p>
+                    <p>Lorenzo</p>
+                  </div>
+                </div>
+
+                <div class="menu">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+          
+              <div class="card-image-wrapper">
+                <img src="https://www.ardeaprints.com/p/172/golden-retriever-dog-puppy-outdoors-13831403.jpg.webp" alt="lovely puppy" />
+              </div>
+
+              <div class="card-description">
+                <div class="icon-description">
+
+                  <div class="left-icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-regular fa-paper-plane"></i>
+                  </div>
+                  
+                  <div class="right-icon">
+                    <i class="fa-regular fa-bookmark"></i>
+                  </div>
+                
+                </div>
+
+                <div class="text-engagement">
+                  <p>Liked by<b>Felit</b>. Cras dictu <b>#vitae</b></p>
+                </div>
+
+                <div class="text-description">
+                  <p>Lorem ipsum dolor sit amet, consectetur <b>#adipiscing elit</b>. Praesent vulputate vel nulla nec sollicitudin. Cras dictum posuere neque, eget interdum <b>#neque euismod vitae</b></p>
+                </div>      
+              </div>
+
+            </div>
+          
+            <!-- single card post  -->
+            <div class="card">
+
+              <div class="card-title">
+                <div class="user-info">
+                  <div class="user-icon">
+                    <i class="fa-brands fa-html5"></i>
+                  </div>
+
+                  <div class="user-data">
+                    <p>HTML 5</p>
+                    <p>Lorenzo</p>
+                  </div>
+                </div>
+
+                <div class="menu">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+          
+              <div class="card-image-wrapper">
+                <img src="https://lp-cms-production.imgix.net/features/2017/11/GettyRF_543346423-1-ab159824d5bd.jpg" alt="lovely venice" />
+              </div>
+
+              <div class="card-description">
+                <div class="icon-description">
+
+                  <div class="left-icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-regular fa-paper-plane"></i>
+                  </div>
+                  
+                  <div class="right-icon">
+                    <i class="fa-regular fa-bookmark"></i>
+                  </div>
+                
+                </div>
+
+                <div class="text-engagement">
+                  <p>Liked by<b>Felit</b>. Cras dictu <b>#vitae</b></p>
+                </div>
+
+                <div class="text-description">
+                  <p>Lorem ipsum dolor sit amet, consectetur <b>#adipiscing elit</b>. Praesent vulputate vel nulla nec sollicitudin. Cras dictum posuere neque, eget interdum <b>#neque euismod vitae</b></p>
+                </div>      
+              </div>
+
+            </div>
+
+            <!-- single card post  -->
+            <div class="card">
+
+              <div class="card-title">
+                <div class="user-info">
+                  <div class="user-icon">
+                    <i class="fa-brands fa-html5"></i>
+                  </div>
+
+                  <div class="user-data">
+                    <p>HTML 5</p>
+                    <p>Lorenzo</p>
+                  </div>
+                </div>
+
+                <div class="menu">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+          
+              <div class="card-image-wrapper">
+                <img src="https://www.worldbeachguide.com/photos/papagayo-beach-lanzarote.jpg" alt="magic island" />
+              </div>
+
+              <div class="card-description">
+                <div class="icon-description">
+
+                  <div class="left-icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-regular fa-paper-plane"></i>
+                  </div>
+                  
+                  <div class="right-icon">
+                    <i class="fa-regular fa-bookmark"></i>
+                  </div>
+                
+                </div>
+
+                <div class="text-engagement">
+                  <p>Liked by<b>Felit</b>. Cras dictu <b>#vitae</b></p>
+                </div>
+
+                <div class="text-description">
+                  <p>Lorem ipsum dolor sit amet, consectetur <b>#adipiscing elit</b>. Praesent vulputate vel nulla nec sollicitudin. Cras dictum posuere neque, eget interdum <b>#neque euismod vitae</b></p>
+                </div>      
+              </div>
+
+            </div>
+
+            <!-- single card post  -->
+            <div class="card">
+
+              <div class="card-title">
+                <div class="user-info">
+                  <div class="user-icon">
+                    <i class="fa-brands fa-html5"></i>
+                  </div>
+
+                  <div class="user-data">
+                    <p>HTML 5</p>
+                    <p>Lorenzo</p>
+                  </div>
+                </div>
+
+                <div class="menu">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+          
+              <div class="card-image-wrapper">
+                <img src="https://www.thekitesurfcentre.com/wp-content/uploads/2017/07/How-to-jump-higher-kitesurfing-1.jpg" alt="lovely puppy" />
+              </div>
+
+              <div class="card-description">
+                <div class="icon-description">
+
+                  <div class="left-icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-regular fa-paper-plane"></i>
+                  </div>
+                  
+                  <div class="right-icon">
+                    <i class="fa-regular fa-bookmark"></i>
+                  </div>
+                
+                </div>
+
+                <div class="text-engagement">
+                  <p>Liked by<b>Felit</b>. Cras dictu <b>#vitae</b></p>
+                </div>
+
+                <div class="text-description">
+                  <p>Lorem ipsum dolor sit amet, consectetur <b>#adipiscing elit</b>. Praesent vulputate vel nulla nec sollicitudin. Cras dictum posuere neque, eget interdum <b>#neque euismod vitae</b></p>
+                </div>      
+              </div>
+
+            </div>
+            <!-- end card  -->
+
+
+          </div>
+          <!-- end grid selector  -->
+        </div>
+
+
+
+      </div>
+    </section>
+
+
+    <!-- bootstrap scirpt  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+   
+    <!-- end container  -->
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
