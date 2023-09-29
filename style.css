@@ -150,7 +150,7 @@ card styling
 
 
 
-
+/* 
 .img-container{
   margin: 0.5rem auto;
   display: flex;
@@ -165,4 +165,45 @@ card styling
 .img-container img{
   width: 200%;
   height: 100%;
+} */
+
+
+
+
+
+.image-box{
+  height: 300px;
+  border: white solid 0.3rem;
+}
+
+.img-1{
+background-image: url(https://www.ardeaprints.com/p/172/golden-retriever-dog-puppy-outdoors-13831403.jpg);
+background-position: center;
+background-size: cover;
+}
+
+.img-2{
+background-image: url(https://lp-cms-production.imgix.net/features/2017/11/GettyRF_543346423-1-ab159824d5bd.jpg);
+background-position: center;
+background-size: cover;
+}
+
+.img-3{
+background-image: url(https://www.worldbeachguide.com/photos/papagayo-beach-lanzarote.jpg);
+background-position: center;
+background-size: cover;
+}
+
+@media only screen and (max-width: 991px) {
+  .image-box{
+    height: 200px;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  .image-box{
+    height: 150px;
+  }
+
 }
